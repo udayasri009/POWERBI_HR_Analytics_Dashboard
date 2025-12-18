@@ -65,3 +65,96 @@ To analyze HR data using Power BI to understand employee attrition, workforce de
 -How does non-travel vs travel impact attrition?
 
 - Dashboard Interactions <a href = "https://github.com/udayasri009/POWERBI_HR_Analytics_Dashboard/blob/main/HR%20ANALYSIS%20PROJECT%20POWERBI.pbix">View Dashboard</a>
+
+# FORMULAS
+
+Total Employees = COUNT(HR_Data[EmployeeID])
+
+Attrition Count =CALCULATE(
+                          COUNT(HR_Data[EmployeeID]),
+                          HR_Data[Attrition] = "Yes"
+)
+
+Active Employees =
+CALCULATE(
+    COUNT(HR_Data[EmployeeID]),
+    HR_Data[Attrition] = "No"
+)
+
+Attrition Rate (%)
+Attrition Rate =
+DIVIDE(
+    [Attrition Count],
+    [Total Employees],
+    0
+)
+
+Average Age = AVERAGE(HR_Data[Age])
+
+Average Salary = AVERAGE(HR_Data[MonthlyIncome])
+
+Average Tenure = AVERAGE(HR_Data[YearsAtCompany])
+
+Attrition by Gender =
+CALCULATE(
+    COUNT(HR_Data[EmployeeID]),
+    HR_Data[Attrition] = "Yes"
+)
+
+Attrition by Category =
+CALCULATE(
+    COUNT(HR_Data[EmployeeID]),
+    HR_Data[Attrition] = "Yes"
+)
+
+Age Group =
+SWITCH(
+    TRUE(),
+    HR_Data[Age] <= 25, "18-25",
+    HR_Data[Age] <= 35, "26-35",
+    HR_Data[Age] <= 45, "36-45",
+    HR_Data[Age] <= 55, "46-55",
+    "55+"
+)
+
+Attrition by AgeGroup =
+CALCULATE(
+    COUNT(HR_Data[EmployeeID]),
+    HR_Data[Attrition] = "Yes"
+)
+
+Salary Slab =
+SWITCH(
+    TRUE(),
+    HR_Data[MonthlyIncome] <= 5000, "Up to 5k",
+    HR_Data[MonthlyIncome] <= 10000, "5k-10k",
+    HR_Data[MonthlyIncome] <= 15000, "10k-15k",
+    "15k+"
+)
+
+Attrition by Salary =
+CALCULATE(
+    COUNT(HR_Data[EmployeeID]),
+    HR_Data[Attrition] = "Yes"
+)
+
+Attrition by Years =
+CALCULATE(
+    COUNT(HR_Data[EmployeeID]),
+    HR_Data[Attrition] = "Yes"
+)
+
+Attrition by Business Travel =
+CALCULATE(
+    COUNT(HR_Data[EmployeeID]),
+    HR_Data[Attrition] = "Yes"
+)
+
+Attrition by Marital Status =
+CALCULATE(
+    COUNT(HR_Data[EmployeeID]),
+    HR_Data[Attrition] = "Yes"
+)
+
+## DASHBOARD 
+![HR Analytics Dashboard](POWERBI_DASHBOARD.IMG.PNG)
