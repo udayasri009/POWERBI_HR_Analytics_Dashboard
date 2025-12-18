@@ -64,4 +64,4 @@ To analyze HR data using Power BI to understand employee attrition, workforce de
 
 -How does non-travel vs travel impact attrition?
 
-- Dashboard Interactions <a href = "">View Dashboard</a>
+- Dashboard Interactions <a href = "https://github.com/udayasri009/POWERBI_HR_Analytics_Dashboard/blob/main/HR%20ANALYSIS%20PROJECT%20POWERBI.pbix">View Dashboard</a>
