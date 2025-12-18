@@ -157,4 +157,4 @@ CALCULATE(
 )
 
 ## DASHBOARD 
-![HR Analytics Dashboard](POWERBI_DASHBOARD.IMG.PNG)
+![HR Analytics Dashboard](POWERBI_DASHBOARD.IMG.png)
