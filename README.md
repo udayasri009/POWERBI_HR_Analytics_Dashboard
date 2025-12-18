@@ -158,3 +158,10 @@ CALCULATE(
 
 ## DASHBOARD 
 ![HR Analytics Dashboard](POWERBI_DASHBOARD.IMG.png)
+
+## Project Insight
+The HR Analytics dashboard provides a clear view of employee attrition patterns across the organization. It highlights that attrition is higher among employees in the 26–35 age group, those in lower salary slabs, and roles such as Sales Executive and Laboratory Technician. Employees with frequent business travel and shorter tenure show a greater likelihood of leaving. The analysis also reveals variations in attrition by education field, marital status, and gender, helping HR identify high-risk employee segments. These insights enable data-driven decisions to improve retention strategies, compensation planning, and workforce management.
+
+## Final Conclusion
+
+The HR Analytics dashboard shows that attrition is mainly influenced by age, salary, job role, tenure, and business travel. Employees in the 26–35 age group, lower salary slabs, and high-travel roles have higher attrition. These insights help HR teams take targeted actions to improve retention and workforce planning.
